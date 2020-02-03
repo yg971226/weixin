@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        ejs模板引擎
+
+<!--        解析变量-->
+        <%= name %>
+    </div>
+
+    <div>
+        <%  for(let i  in  info   ){ %>
+
+            <p><%= info[i] %></p>
+
+        <%}%>
+    </div>
+
+<div>
+        <% if(age >= 18){ %>
+            成年
+        <%}else{%>
+            未成年
+
+        <%}%>
+
+</div>
+
+</body>
+</html>
